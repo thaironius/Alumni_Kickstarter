@@ -1,4 +1,8 @@
 AlumniKickstarter::Application.routes.draw do
+  resources :students
+
+match '/',  to: 'students#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
