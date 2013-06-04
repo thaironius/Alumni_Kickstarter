@@ -1,14 +1,78 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>AlumniKickstarter</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <!DOCTYPE html>  
+  <html>
+  <head>
+    <title>Raise money by engaging students and alumni</title>
+    <!--[if lt IE 9]>  
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->  
 
-<%= yield %>
+    <%= stylesheet_link_tag    "application", :media =>  
+    "all" %>
+    <%= javascript_include_tag "application" %>  
+    <%= csrf_meta_tags %>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
 
-</body>
-</html>
+  <body>
+
+    <!-- Jumbotron -->  
+    <div class="jumbotron masthead">
+      <h1>Have something you want to fund?</h1>
+      <p>Engage with students and alumni to fund it</p>
+    </div>
+
+    <!-- Marketing -->  
+    <div class="container">
+      <div class="marketing"
+        <center>
+        <h1>How it works</h1>
+      </center>
+      <div class='row-fluid'>
+        <div class="span4">
+          <img class="marketing-img" src="http://s3.amazonaws.com/tententen/images/causes/063355-green-grunge-clipart-icon-people-things-hand-shuffle.png">  
+          <h2>1) You post a 'cause'</h2>
+          <p>Are you raising funds to help pay for tuition? Start a new business? Organize an event?</p>
+        </div>
+
+        <div class="span4">
+          <img class="marketing-img" src="http://i.telegraph.co.uk/multimedia/archive/01688/crowd_1688541c.jpg">  
+          <h2>2) Students and alumni view your proposal</h2>
+          <p>If they like what they see, they can make a contribution.</p>
+        </div>
+
+        <div class="span4">
+          <img class="marketing-img" src="http://cdn1.iconfinder.com/data/icons/customicondesignoffice2/256/success.png">  
+          <h2>3) Funds are transferred to your account</h2>
+          <p>We transfer the funds to your account and you make the cause happen.</p>
+        </div>
+      </div>
+
+
+
+      <!-- CTA -->      
+      <div class="cta">
+        <!-- <img src="assets/images/satisfaction.png" width="250">      
+        -->
+        <div class="cta-body"></div>
+        <div style="clear:both"></div>
+        <div class="reserve-body" style="text-align:center">
+          <h2>
+            Open to Williams alumni and students. Request and invitation.
+          </h2>
+          <form id="reserve_form" class="form">
+            <input type="email" name="email" placeholder="Your email address" class>      
+
+            <input type="text" name="name" placeholder="Your name" class>      
+            <input type="submit" class="button" value="Request an invitation"></form>
+          <p id="error">
+            Blast! There's a problem with our form. Please let us know via
+            <a href="mailto:08tqn@williams.edu">email!</a>
+          </p>
+        </div>
+</div>
+
+
+      <!-- Footer Line -->  
+      <hr class="soften">
+
+    </body>
+    </html>
